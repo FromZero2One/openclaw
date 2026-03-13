@@ -12,6 +12,7 @@ export const runNodeWatchedPaths = ["src", "tsconfig.json", "package.json"];
 
 const statMtime = (filePath, fsImpl = fs) => {
   try {
+    console.log("run-node.mjs--------------------------");
     return fsImpl.statSync(filePath).mtimeMs;
   } catch {
     return null;

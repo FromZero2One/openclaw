@@ -14,6 +14,7 @@ const buildWatchArgs = (args) => [
 ];
 
 export async function runWatchMain(params = {}) {
+  console.log("watch-node.mjs---------------", params);
   const deps = {
     spawn: params.spawn ?? spawn,
     process: params.process ?? process,
